@@ -6,6 +6,7 @@ RUN yum -y update
 
 # Installing PHP 5.6
 RUN yum -y install https://mirror.webtatic.com/yum/el6/latest.rpm
+RUN yum --enablerepo=remi install php54-php-mcrypt php55-php-mcrypt php56-php-mcrypt
 RUN yum -y install php56w-pecl-memcache  php-mcrypt*   php56w-fpm php56w-intl php56w-mcrypt php56w-mbstring php56w-mysql php56w-pdo php56w-mbstring php56w-soap php56w-pecl-zendopcache php56w-xml php56w-gd php56w-opcache php56w-pecl-imagick
 # <---- End
 
